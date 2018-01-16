@@ -53,4 +53,10 @@ function ContactCtrl() {
 
         
     ];
+    
+    // Lets change the controller to use the $scope parameter.
+    var myApp = angular.module("myModule", [])
+                        .controller("myController", function($scope){
+                        $scope.message = "Cavs are damn fucking stupid!"
+                        });
 }
